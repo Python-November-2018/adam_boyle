@@ -1,1 +1,49 @@
-Examples of terminal outputs should go here.
+Try pip!
+
+pip install Django==1.11.9
+
+This command specifically installs Django version 1.11.9. I learned that if I do not include ”==1.11.9” in the command that it will automatically install the latest version of Django instead. The install command is also case-sensitive.
+
+pip list
+
+This command shows me a list in alphabetical order of all my installed packages. I also learned that you can add things to the “list” command like “-u,” “-l” and “-f.” Those are just a few of many options to have the list display certain things you may be looking for.
+
+deactivate
+
+This command deactivated my virtual environment.
+
+pip3 list
+
+This command is similar to “pip list,” but I had to specify “pip3” because I am no longer in my virtual environment. The list results were fairly similar, still including things like: pip, putz, setuptools and wheel. However, this list did not show an installed version of Django. Instead, it showed “virtualenv 16.1.0.”
+
+source myEnvironments/py3Env/bin/activate
+
+This command followed the provided file path to my virtual environment and activated it again, showing me the “(py3Env)” before the rest of my command line.
+
+pip install Django==1.11.9
+
+Because I have already used this command and already installed this specific version of Django, the result tells me “Requirement already satisfied.” This tells me that I already have that version of Django installed in that directory.
+
+pip freeze
+
+This command shows me the versions of installed packages in my local virtual environment. You can add things to this command, like “> requirements.txt” to create a .txt file with the versions as well.
+
+pip freeze > requirements.txt
+
+This command creates a .txt file in the directory you are in with the versions of installed packages.
+
+ls
+
+This command returns a list of all the files/folders currently stored on my desktop.
+
+pip uninstall Django
+
+This command uninstalls Django from the virtual environment I am in.
+
+pip show Django
+
+This command will not show anything if Django is not installed. If Django is installed, this command will return all the info for the installed version of Django, such as: name, author, license, version, file path etc.
+
+pip search flask
+
+This command will return a list of all the packages with the term “flask” found in Python’s central package repository.
